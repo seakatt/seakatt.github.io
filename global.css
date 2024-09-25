@@ -1,0 +1,611 @@
+html {
+    /* font-family: 'Roboto', Verdana, sans-serif; */
+    font-family: "Anton", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  /* font-weight: 400; */
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/anton/...) format('woff2');
+}
+
+
+:root{
+  --kull: #101010;
+  --hvit: #dfd5c3;
+  --gylden: #f5a700;
+  --red: #B31F24
+
+}
+
+ 
+a{
+text-decoration: none;
+
+}
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  width: 94%;
+  background-color: var(--kull);
+  color: var(--hvit);
+}
+
+.forside {
+height: 100vh;
+overflow: hidden; 
+}
+
+.uthevet {
+  color: var(--gylden);
+}
+
+header {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 2vh;
+
+}
+
+.headerbox {
+  display: flex;
+  width: 100%;
+
+}
+
+.logo {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #f5a700;
+  padding-left: 1vh;
+  /* object-position: -1vh 0; */
+}
+
+.logoimg {
+  height: 109%;
+  /* height: 16vh; */
+  /* padding-right: 1vw; */
+  /* transform: scaleX(-1); */
+  /* padding-left: 1vw; */
+  padding-left: 2.5vh;
+  
+}
+
+.logotext {
+ color: var(--gylden);
+ padding-top: 1vh;
+}
+
+.logotext:hover {
+  scale: 99%;
+}
+
+.navn {
+  font-size: 10vh;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 0.9;
+}
+
+.tittel {
+  font-size: 2.96vh;
+  text-align: right;
+  padding-right: 1vh;
+  padding-top: 0.4vh;
+  text-wrap: nowrap;
+}
+
+.portfolioexhibition {
+  line-height: 0.97;
+  justify-self: right;
+  text-align: right;
+  align-content: end;
+}
+
+.portfolioexhibition:hover {
+  scale: 99%;
+}
+
+.portfolio-tittel{
+  font-size: 3vw;
+}
+.exhibition-tittel {
+  font-size: 2.92vw;
+}
+
+.year-tittel {
+  font-size: 1vw;
+}
+
+
+ .music-player {
+  /*position: absolute;
+  top: 1vw;
+  right: 1vw;
+  background-color: var(--hvit);
+  padding: 0.5vw;
+  border: 1px solid var(--gylden);
+  border-radius: 5px;*/
+  scale: 75%;
+  background-color: #f5a700;
+  padding: 0;
+  margin: 0;
+}
+
+
+.headerline {
+  width: 100%;
+  height: 0.4vh;
+  background-color: var(--gylden);
+  margin-top: 1.5vh;
+  margin-bottom: 3vh;
+  border: none;
+}
+
+main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.prosjekter-seksjon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5vh;
+     height: 76vh;
+  }
+
+
+.prosjekt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 37vh;
+  width: 37vh;
+  aspect-ratio: 1/1;
+  background-color: var(--hvit);
+}
+.prosjekt:hover{
+  scale: 98%;
+  /* transition: 0.1s; */
+}
+
+.project-image {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-bottom: var(--kull) solid 0.2em;
+}
+
+
+.prosjektnavn {
+  display: flex;
+  text-wrap: nowrap;
+  padding-left: 0.6vh;
+  color: black;
+  padding-bottom: 0.7vh;
+}
+
+.prosjekt-tittelognavn {
+align-self: center;
+padding-top: 0.5vh;
+}
+
+.prosjekt-tittel {
+  font-size: 3.7vh;
+  }
+
+.prosjektnavn-over{
+  font-size: 2vh;
+}
+
+.prosjektnr {
+  align-self: flex-end;
+  font-size: 6.4vh;
+  padding-right: 0.7vh;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40vh;
+  height: 100%;
+  padding-left: 3vh;
+}
+
+.profil-header {
+
+  background-color: var(--hvit);
+  width: 100%;
+  margin-bottom: 1.5vw;
+}
+
+
+.profile-picture {
+ max-height: 26vh;
+  object-fit: cover;
+}
+
+.profile p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: small;
+}
+
+.profile-text {
+  color: #cccccc;
+  margin-bottom: 1vw;
+}
+
+.contact {
+  width: 100%;
+  color: #cccccc;
+}
+
+.epost{
+  color: var(--gylden);
+  font-size:medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* --------------------- prosjektsider ------------------ */
+
+.prosjektside main {
+  display: block;
+  width: 80%;
+  padding-bottom: 1vw;
+  /* border: brown 1px solid; */
+}
+
+.prosjektside-split {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.prosjektside-split-høyre {
+  width: 50vh;
+  margin-top: auto;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.prosjektside p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.prosjektside-top h1 {
+  letter-spacing: 0.1vw;
+}
+
+.prosjektside-top {
+  padding-bottom: 1em;
+  font-size: 150%;
+  display: flex;
+  
+}
+
+.prosjektside-top > .prosjekt-nr {
+  font-size: 12vh;
+  padding-right: 2vh;
+}
+
+.prosjektside-split-venstre {
+  width: 47%;
+}
+
+.prosjekt-intro {
+  padding-top: 2vh;
+}
+
+.prosjektside-split-høyre img{
+  width: 50vh;
+  height: auto;
+}
+
+.prosjekttekst {
+  width: 60vh;
+ 
+}
+
+.prosjekttekst2 {
+  width: 60vh;
+  margin-top: auto;
+}
+
+.prosjekt-video {
+  height: 40vh;
+}
+.youtube {
+  width: fit-content;
+}
+
+.prosjekt-video-youtube {
+  width: 50vh;
+  height: 28.125vh;
+}
+
+.flexcolumn{
+  display: flex;
+  flex-direction: column;
+}
+.prosjekttekst {
+  /* align-items: flex-end; */
+  /* text-align: end; */
+  text-justify:distribute;
+}
+
+.bildestripe {
+ display: flex;
+  justify-content: center;
+  gap: 2vh;
+  height: 29vh;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+
+.overskrift {
+  display: flex;
+  font-size: 300%;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin-top: 0;
+  padding-top: 0; */
+ text-align: center;
+  /* background-color: olive; */
+}
+.overskrift hr {
+  width: 100%;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.bolk {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 1px brown; */
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#bolk_block {
+  display: block;
+}
+
+.bildetekst{
+width: 60vh;
+}
+
+/* .bildetekst img {
+  width: 60vh;
+} */
+
+.bildetekst_bilder {
+   background-color: #cccccc;
+   display: flex;
+   justify-content: space-between;
+}
+
+.bildetekst_bilder img {
+/* width: 15vh; */
+height: 20vh;
+
+}
+
+.prosjektgalleri {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  }
+
+.prosessbilder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1vh;
+  padding-bottom: 1vh;
+  
+}
+.prosessbilder img{
+    height: 27vh;
+  }
+
+.bilder_3x2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vh;
+}
+.bilder_3x2 img {
+  height: 30vh;
+}
+
+.bilder_2x2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vh;
+}
+.bilder_2x2 img {
+  height: 30vh;
+}
+
+/* .bilder_2x10{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  align-items: center;
+}*/
+.bilder_2x10 img {
+  /* height: 30vh; */
+  width: 19%;
+  
+} 
+
+.bilder_2x10 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.bolk-aatb{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 6vh; */
+  gap: 1vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.bolk-aatb img{
+  width: 55vh;
+}
+
+  figcaption {
+    justify-content: end;
+    padding-top: 0.5vh;
+    display: flex;
+    text-wrap: nowrap;
+  }
+  figcaption hr {
+    width: 100%;
+    align-self: center;
+  }
+  .hr2 {
+    width: 4vh;
+  }
+
+  .galleribilde {
+    height: 40vh;
+  }
+
+
+
+/* ---------------- mise ------------- */
+.oppslagsgalleri {
+display: flex;
+flex-wrap: wrap;
+background-color: olive;
+justify-content: space-between;
+row-gap: 2vh;
+}
+
+.oppslag {
+  display: flex;
+  /* width: 40vh; */
+  gap: 0.1vh;
+  width: 32%;
+}
+
+.oppslag img {
+/* width: 25%; */
+  /* width: 28vh */
+  width: 50%;
+}
+.oppslag :hover {
+  cursor: zoom-in;
+  position: relative;
+}
+
+
+/* .oppslag :active {
+  transform: scale(0.7);
+  cursor: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 2;
+} */
+
+
+
+
+
+
+.prosjektside footer {
+  /* margin-top: 10vh; */
+  padding-top: 10vw;
+  height: 10vw;
+  margin: auto;
+  font-size: small;
+}
+
+.footer-prosjekter {
+display: flex;
+justify-content: space-between;
+}
+
+
+@media screen and (min-width:1200px){
+  
+/* body {
+  width: 80%;
+} */
+
+  header {
+    /* width: 87%; */
+    width: 70%;
+  }
+
+  main {
+    /* width: 87%; */
+    width: 70%;
+  }
+
+  /* .prosjekter-seksjon {
+    width: 40%;
+  } */
+
+  .profile {
+    width: 50vh;
+  }
+
+  .prosjektside main {
+    /* width: 87%; */
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width:2000px){
+  
+  header {
+    width: 75%;
+  }
+
+  main {
+    width: 75%;
+  }
+
+}
