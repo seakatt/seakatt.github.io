@@ -540,6 +540,17 @@ height: 20vh;
   padding-bottom: 1vh;
   }
 
+  .prosjektgalleri2 {
+    display: flex;
+    gap: 1vh;
+    /* background-color: brown; */
+    width: 100%;
+    /* overflow: hidden;  */
+    align-items: flex-end;
+  }
+  .prosjektgalleri2 img {
+    width: 100%;
+  }
 /* ------------------------------------------------------------ */
 
 
@@ -640,7 +651,7 @@ width: 100%;
   /* width: 60%; */
   min-width: 50%;
   flex: 3;
-  background-color: olive;
+  /* background-color: olive; */
 }
 .bilder_3x2 img {
   /* height: 30vh; */
