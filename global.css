@@ -1,7 +1,5 @@
 html {
-    /* font-family: 'Roboto', Verdana, sans-serif; */
-    font-family: "Anton", Arial, sans-serif;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -12,19 +10,15 @@ html {
   src: url(https://fonts.gstatic.com/anton/...) format('woff2');
 }
 
-
 :root{
   --kull: #101010;
   --hvit: #dfd5c3;
   --gylden: #f5a700;
   --red: #B31F24
-
 }
-
  
 a{
 text-decoration: none;
-
 }
 
  * {
@@ -46,27 +40,20 @@ video {
   width: 100%;
 }
 
-.forside {
-height: 100vh;
-overflow: hidden; 
-}
-
 .uthevet {
   color: var(--gylden);
 }
 
 header {
   display: flex;
-  width: 80%;
   margin: auto;
   padding-top: 2vh;
-
+  font-family: 'Anton';
 }
 
 .headerbox {
   display: flex;
   width: 100%;
-
 }
 
 .logotext {
@@ -76,38 +63,6 @@ header {
 
 .logotext:hover {
   scale: 99%;
-}
-
-.navn {
-  font-size: 10vh;
-  text-transform: uppercase;
-  white-space: nowrap;
-  line-height: 0.9;
-}
-
-.tittel {
-  font-size: 2.96vh;
-  text-align: right;
-  padding-right: 1vh;
-  padding-top: 0.4vh;
-  text-wrap: nowrap;
-}
-
-.logoimg {
-  height: 109%;
-  /* height: 16vh; */
-  /* padding-right: 1vw; */
-  /* transform: scaleX(-1); */
-  /* padding-left: 1vw; */
-  padding-left: 2.5vh;
-  }
-
-.logo {
-  height: 100%;
-  border-radius: 10px;
-  background-color: #f5a700;
-  padding-left: 1vh;
-  /* object-position: -1vh 0; */
 }
 
 .portfolioexhibition {
@@ -132,20 +87,12 @@ header {
   font-size: 1vw;
 }
 
-
- .music-player {
-  /*position: absolute;
-  top: 1vw;
-  right: 1vw;
-  background-color: var(--hvit);
-  padding: 0.5vw;
-  border: 1px solid var(--gylden);
-  border-radius: 5px;*/
+ /* .music-player {
   scale: 75%;
   background-color: #f5a700;
   padding: 0;
   margin: 0;
-}
+} */
 
 .headerline {
   width: 100%;
@@ -158,30 +105,32 @@ header {
 
 main {
   display: flex;
-  width: 70%;
   margin: auto;
   justify-content: space-between;
-  /* height: 80%; */
-  /* border: solid 1px brown; */
-}
+ }
 
-.prosjekter-seksjon {
+ .prosjekter-seksjon {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5vh;
-     height: 76vh;
-  }
-
+  width: 100%;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2%;
+ }
 
 .prosjekt {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 37vh;
-  width: 37vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* height: 37vh; */
+  /* width: 37vh; */
+  /* height: fit-content; */
   aspect-ratio: 1/1;
   background-color: var(--hvit);
+  font-family: 'Anton';
+  /* max-width: 100%; */
+  /* width: auto; */
+  /* max-width: 50vw; */
 }
+
 .prosjekt:hover{
   scale: 98%;
   /* transition: 0.1s; */
@@ -189,47 +138,48 @@ main {
 
 .project-image {
   width: 100%;
-  height: 75%;
-  object-fit: cover;
-  border-bottom: var(--kull) solid 0.2em;
+   border-bottom: var(--kull) solid 0.2em;
 }
-
 
 .prosjektnavn {
   display: flex;
-  text-wrap: nowrap;
-  padding-left: 0.6vh;
+  /* text-wrap: nowrap; */
+  width: 100%;
+  padding-left: 0.8vw;
   color: black;
-  padding-bottom: 0.7vh;
-}
+  padding-top: 1vw;
+  /* align-items: flex-end; */
+  /* background-color: rgb(26, 10, 45); */
+ }
 
 .prosjekt-tittelognavn {
+/* padding-top: 1.2vw; */
+/* background-color: #f5a700; */
 align-self: center;
-padding-top: 0.5vh;
 }
 
 .prosjekt-tittel {
-  font-size: 3.7vh;
+  font-size: 4.5vw;
   }
 
 .prosjektnavn-over{
-  font-size: 2vh;
+  font-size: 2.5vw;
 }
 
 .prosjektnr {
-  align-self: flex-end;
-  font-size: 6.4vh;
-  padding-right: 0.7vh;
+  font-size: 8vw;
+  padding-right: 0.6vh;
+  /* background-color: olive; */
 }
+
 
 .profile {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 40vh;
+  /* align-items: flex-start; */
+  /* width: 40vh; */
   height: 100%;
-  padding-left: 3vh;
-}
+  }
 
 .profil-header {
   background-color: var(--hvit);
@@ -237,15 +187,12 @@ padding-top: 0.5vh;
   margin-bottom: 1.5vw;
 }
 
-.profile-picture {
- max-height: 26vh;
-  object-fit: cover;
-}
 
 .profile p{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
   line-height: 1.5;
-  font-size: small;
+  /* font-size: small; */
+  font-size: normal;
 }
 
 .profile-text {
@@ -261,7 +208,7 @@ padding-top: 0.5vh;
 .epost{
   color: var(--gylden);
   font-size:medium;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 
@@ -298,10 +245,8 @@ padding-top: 0.5vh;
 h1 {
   padding: 0;
   margin: 0;
-}
-
-.prosjektside p {
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-weight: 450;
+  font-family: 'Anton';
 }
 
 .prosjektside-top h1 {
@@ -316,11 +261,14 @@ h1 {
   /* background-color: #f5a700; */
   text-wrap: nowrap;
   width: 100%;
+  
 }
 
 .prosjektside-top > .prosjekt-nr {
   font-size: 12vh;
   padding-right: 2vh;
+  font-family: 'Anton';
+  /* font-weight: 100; */
   /* text-justify: center; */
   /* padding-bottom: 1vh; */
   /* background-color: brown; */
@@ -464,7 +412,7 @@ h1 {
   display: flex;
   font-size: 300%;
   font-weight: 100;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   /* margin-top: 0;
   padding-top: 0; */
  text-align: center;
@@ -551,7 +499,7 @@ height: 20vh;
   .prosjektgalleri2 img {
     width: 100%;
   }
-  
+
 /* ------------------------------------------------------------ */
 
 
@@ -711,7 +659,7 @@ width: 100%;
     padding-top: 0.5vh;
     display: flex;
     text-wrap: nowrap;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   }
   figcaption hr {
     width: 100%;
@@ -750,15 +698,6 @@ row-gap: 2vh;
   transition: 0.1s;
 }
 
-/* .oppslag img {
- 
-} */
-
-.oppslagsgalleri :hover {
-  cursor: zoom-in;
-  /* position: relative; */
-   /* width: 50%; */
-}
 
 .oppslagsgalleri :active {
   transition: 0.1s;
@@ -775,7 +714,7 @@ row-gap: 2vh;
   position: relative;
 }
 
-.zoomclick:hover, .zoomclick2:hover, .zoomclick3:hover, .prosjekt-video:hover {
+.zoomclick:hover, .zoomclick2:hover, .zoomclick3:hover, .prosjekt-video:hover, .oppslagsgalleri :hover  {
   cursor: zoom-in;
 }
 .zoomclick img:active, .zoomclick video:active { 
@@ -844,8 +783,67 @@ display: flex;
 justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px){
-  .prosjektside-split{
+@media screen and (max-width: 1024px){
+  /* ------------------------------------- */
+  .MQsmall{
+    display: block;
+  }
+  .MQmid{
+    display: none;
+  }
+  .MQlarge{
+    display: none;
+  }
+  .MQlarger{
+    display: none;
+  }
+  /* ------------------------------------------- */
+
+header{
+  max-width: 100%;
+}
+
+/* .headerbox{
+  background-color: olive;
+} */
+.logotext{
+  line-height: 1;
+}
+ .navn{
+  font-size: 12.5vw;
+ }
+ .tittel{
+  font-size: 3.7vw;
+ }
+
+main{
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: brown;
+    /* height: fit-content; */
+}
+.profile{
+  width: 100%;
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+}
+.profile-picture{
+  width: 100%;
+  height: 100%;
+}
+.profil-header{
+  height: auto;
+  width: 100%;
+}
+
+/* .prosjekter-seksjon{
+  background-color: olive;
+  width: 100%;
+  display: block;
+  margin: auto;
+} */
+
+.prosjektside-split{
     display: block;
     /* background-color: darkblue; */
     }
@@ -882,10 +880,176 @@ justify-content: space-between;
        aspect-ratio: 16/9;
 
      }
+
+
+
+  /* ----------------------------------------------------------------------------------------------- */
 }
 
-@media screen and (min-width:1200px){
+
+@media screen and (min-width: 1024px){
+
+  /* ------------------------------------- */
+  .MQsmall{
+    display: none;
+  }
+  .MQmid{
+    display: block;
+  }
+  .MQlarge{
+    display: none;
+  }
+  .MQlarger{
+    display: none;
+  }
+  /* ------------------------------------------- */
+
+  header, main {
+    width: 80%;
+  }
+  .profile-picture {
+    /* max-height: 26vh; */
+     object-fit: cover;
+     max-width: 100%;
+   }
   
+   
+.navn {
+  /* font-size: 10vh; */
+  font-size: 500%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 0.9;
+}
+
+.tittel {
+  font-size: 2.96vh;
+  text-align: right;
+  padding-right: 1vh;
+  padding-top: 0.4vh;
+  text-wrap: nowrap;
+}
+
+.logoimg {
+  height: 109%;
+   /* transform: scaleX(-1); */
+   padding-left: 2.5vh;
+  }
+
+.logo {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #f5a700;
+  padding-left: 1vh;
+  /* object-position: -1vh 0; */
+}
+
+
+.prosjekter-seksjon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5vh;
+     /* height: 76vh; */
+  }
+
+  
+/* .project-image {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-bottom: var(--kull) solid 0.2em;
+} */
+
+/* .prosjektnavn {
+  display: flex;
+  text-wrap: nowrap;
+  padding-left: 0.6vh;
+  color: black;
+  padding-bottom: 0.7vh;
+}
+
+.prosjekt-tittelognavn {
+align-self: center;
+padding-top: 0.5vh;
+}
+
+.prosjekt-tittel {
+  font-size: 3.7vh;
+  }
+
+.prosjektnavn-over{
+  font-size: 2vh;
+}
+
+.prosjektnr {
+  align-self: flex-end;
+  font-size: 6.4vh;
+  padding-right: 0.7vh;
+} */
+
+.prosjektnavn {
+  display: flex;
+  text-wrap: nowrap;
+  padding-left: 0.6vh;
+  color: black;
+  /* align-items: center; */
+ }
+
+.prosjekt-tittelognavn {
+/* align-self: center; */
+padding-top: 0.5vh;
+}
+
+.prosjekt-tittel {
+  font-size: 3em;
+  }
+
+.prosjektnavn-over{
+  font-size: 1.4em;
+}
+
+.prosjektnr {
+  /* display: flex; */
+  /* align-content: flex-end; */
+  font-size: 5em;
+  padding-right: 0.7vh;
+  background-color: olive;
+  /* padding-top: 0.06em; */
+  
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40vh;
+  height: 100%;
+  padding-left: 3vh;
+}
+
+
+       /* ----------------------------------------------------------------------------------------------- */
+}
+
+@media screen and (min-width:1800px){
+
+  /* ------------------------------------- */
+.MQsmall{
+  display: none;
+}
+.MQmid{
+  display: none;
+}
+.MQlarge{
+  display: block;
+}
+.MQlarger{
+  display: none;
+}
+/* ------------------------------------------- */
+
+
 /* body {
   width: 80%;
 } */
@@ -894,6 +1058,11 @@ justify-content: space-between;
     /* width: 87%; */
     width: 70%;
   }
+
+  .forside {
+    overflow: hidden; 
+    padding-bottom: 0;
+    }
 
   /* main {
         width: 70%;
@@ -907,11 +1076,30 @@ justify-content: space-between;
     width: 50vh;
   }
 
+ 
 
+
+
+  /* ----------------------------------------------------------------------------------------------- */
 }
 
-/* @media screen and (min-width:2000px){
+@media screen and (min-width:2000px){
   
+   /* ------------------------------------- */
+.MQsmall{
+  display: none;
+}
+.MQmid{
+  display: none;
+}
+.MQlarge{
+  display: none;
+}
+.MQlarger{
+  display: block;
+}
+/* ------------------------------------------- */
+
   header {
     width: 75%;
   }
@@ -920,4 +1108,12 @@ justify-content: space-between;
     width: 75%;
   }
 
-} */
+
+
+
+
+
+
+
+  /* ----------------------------------------------------------------------------------------------- */
+}
