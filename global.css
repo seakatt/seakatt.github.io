@@ -765,9 +765,13 @@ row-gap: 2vh;
   text-wrap: nowrap;
 }
 .medstrek hr {
-  margin: 1vh;
+  margin-right: 1vw;
   width: 100%;
   align-self: center;
+  border: none;
+  margin-top: 0.8vw;
+  height: 0.5vw;
+  background-color: #f5a700;
 }
 
 .prosjektside footer {
@@ -808,6 +812,7 @@ header{
 } */
 .logotext{
   line-height: 1;
+  justify-content: flex-end;
 }
  .navn{
   font-size: 12.5vw;
