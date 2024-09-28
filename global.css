@@ -900,7 +900,10 @@ main{
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and 
+/* (min-width: 1024px) */
+(min-width: 800px)
+{
 
   /* ------------------------------------- */
   .MQsmall{
@@ -1010,7 +1013,7 @@ width: 25vw;
        /* ----------------------------------------------------------------------------------------------- */
 }
 @media screen and 
-(min-width:1200px)
+(min-width:1000px)
 /* (min-width:1200px) */
 /* -----------------------------LAPTOP */
 {
