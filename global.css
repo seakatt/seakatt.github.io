@@ -919,46 +919,37 @@ main{
 
   header, main {
     width: 70%;
-    /* background-color: olive; */
   }
 
   .profile-picture {
-    /* max-height: 26vh; */
      object-fit: cover;
      max-width: 100%;
    }
   
    
 .navn {
-  /* font-size: 10vh; */
-  /* font-size: 500%; */
-  /* font-size: 8vh; */
   font-size: 5em;
   text-transform: uppercase;
   white-space: nowrap;
   line-height: 0.9;
+    background-color: olive;
 }
 
 .tittel {
   font-size: 2.96vh;
   text-align: right;
-  /* padding-right: 1vh; */
   padding-top: 0.4vh;
   text-wrap: nowrap;
 }
 
 .logoimg {
-  /* height: 109%; */
-   /* transform: scaleX(-1); */
    padding-left: 2.5vh;
   }
 
 .logo {
   height: 14vh;
   border-radius: 10px;
-  /* background-color: #f5a700; */
   padding-left: 1vh;
-  /* object-position: -1vh 0; */
 }
 
 .medstrek hr{
@@ -970,48 +961,14 @@ main{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5vh;
-     /* height: 76vh; */
      height: fit-content;
      width: fit-content;
-     /* background-color: brown; */
   }
 
 .prosjekt{
-/* width: 100%; */
 width: 25vw;
 }
   
-/* .project-image {
-
-  } */
-
-/* .prosjektnavn {
-  display: flex;
-  text-wrap: nowrap;
-  padding-left: 0.6vh;
-  color: black;
-  padding-bottom: 0.7vh;
-}
-
-.prosjekt-tittelognavn {
-align-self: center;
-padding-top: 0.5vh;
-}
-
-.prosjekt-tittel {
-  font-size: 3.7vh;
-  }
-
-.prosjektnavn-over{
-  font-size: 2vh;
-}
-
-/* .prosjektnr {
-  align-self: flex-end;
-  font-size: 6.4vh;
-  padding-right: 0.7vh;
-} */ 
-
 .prosjektnavn {
   display: flex;
   text-wrap: nowrap;
@@ -1019,16 +976,9 @@ padding-top: 0.5vh;
   font-size: 0.5em;
   height: fit-content;
   color: black;
-  /* background-color: olive; */
   align-items: center;
   padding-top: 4%;
  }
-
-/* 
-.prosjekt-tittelognavn {
-align-self: center;
-padding-top: 0.5vh;
-} */
 
 .prosjekt-tittel {
   font-size: 3em;
@@ -1039,12 +989,8 @@ padding-top: 0.5vh;
 }
 
 .prosjektnr {
-  /* display: flex; */
-  /* align-content: flex-end; */
   font-size: 5.5em;
   padding-right: 0.7vh;
-  /* background-color: olive; */
-  /* padding-top: 0.06em; */
   }
 
 
@@ -1058,16 +1004,102 @@ padding-top: 0.5vh;
 }
 .profile-picture{
   width: 50%;
-  /* object-fit: contain; */
 }
 
 
        /* ----------------------------------------------------------------------------------------------- */
 }
+@media screen and 
+(min-width:1200px)
+/* (min-width:1200px) */
+/* -----------------------------LAPTOP */
+{
+
+  /* ------------------------------------- */
+.MQsmall{
+  display: none;
+}
+.MQmid{
+  display: none;
+}
+.MQlarge{
+  display: block;
+}
+.MQlarger{
+  display: none;
+}
+/* ------------------------------------------- */
+
+
+/* body {
+  width: 80%;
+} */
+
+  header, main {
+       width: 80%;
+       /* background-color: olive; */
+       /* width: fit-content; */
+  }
+  
+  
+  .forside {
+    overflow: hidden; 
+    padding-bottom: 0;
+    }
+
+  /* main {
+        width: 70%;
+  } */
+
+  /* .prosjekter-seksjon {
+    width: 40%;
+  } */
+
+
+ .prosjekt{
+    /* width: 100%; */
+    width: 32vh;
+    /* aspect-ratio: 1/1; */
+    /* overflow: hidden; */
+    }
+
+.prosjektnavn{
+  padding-top: 1%;
+}
+
+    .prosjektnr{
+      font-size: 7em;
+    }
+
+    .prosjektnavn-over{
+      font-size: 2em;
+    }
+
+    .prosjekt-tittel{
+      font-size: 3.8em;
+      
+    }
+
+    /* .prosjekt-tittelognavn{
+      padding-left: 0;
+    } */
+
+
+  .profile {
+    width: 50vh;
+  }
+
+
+
+
+
+  /* ----------------------------------------------------------------------------------------------- */
+}
+
 
 @media screen and 
-/* (min-width:1400px) */
-(min-width:1200px)
+(min-width:1600px)
+/* (min-width:1200px) */
 {
 
   /* ------------------------------------- */
