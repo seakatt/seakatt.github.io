@@ -59,6 +59,7 @@ header {
 .logotext {
  color: var(--gylden);
  padding-top: 1vh;
+ margin-bottom: 1.5vh;
 }
 
 .logotext:hover {
@@ -98,7 +99,7 @@ header {
   width: 100%;
   height: 0.4vh;
   background-color: var(--gylden);
-  margin-top: 1.5vh;
+  /* margin-top: 1.5vh; */
   margin-bottom: 3vh;
   border: none;
 }
@@ -147,7 +148,7 @@ main {
   width: 100%;
   padding-left: 0.8vw;
   color: black;
-  padding-top: 1vw;
+  padding-top: 0.7vw;
   /* align-items: flex-end; */
   /* background-color: rgb(26, 10, 45); */
  }
@@ -216,7 +217,7 @@ align-self: center;
 
 .prosjektside main {
   display: block;
-  width: 70%;
+  /* width: 70%; */
   padding-bottom: 1vw;
   /* border: brown 1px solid; */
 }
@@ -812,7 +813,7 @@ header{
 } */
 .logotext{
   line-height: 1;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
  .navn{
   font-size: 12.5vw;
@@ -820,11 +821,12 @@ header{
  .tittel{
   font-size: 3.7vw;
  }
+ 
 
 main{
     flex-direction: column-reverse;
     width: 100%;
-    background-color: brown;
+    /* background-color: brown; */
     /* height: fit-content; */
 }
 .profile{
@@ -834,11 +836,17 @@ main{
 }
 .profile-picture{
   width: 100%;
-  height: 100%;
+  height: 50vw;
 }
 .profil-header{
-  height: auto;
+  /* height: auto; */
+  /* height: 50%; */
   width: 100%;
+}
+
+.profile-text{
+  margin-top: 2%;
+  margin-bottom: 8%;
 }
 
 /* .prosjekter-seksjon{
@@ -861,7 +869,7 @@ main{
       display: block;
       margin: auto;
       width: 100%;
-      background-color: olive;
+      /* background-color: olive; */
     }
     .prosjektside-split-høyre figure {
       width: 100%;
@@ -910,8 +918,10 @@ main{
   /* ------------------------------------------- */
 
   header, main {
-    width: 80%;
+    width: 70%;
+    /* background-color: olive; */
   }
+
   .profile-picture {
     /* max-height: 26vh; */
      object-fit: cover;
@@ -921,7 +931,9 @@ main{
    
 .navn {
   /* font-size: 10vh; */
-  font-size: 500%;
+  /* font-size: 500%; */
+  /* font-size: 8vh; */
+  font-size: 5em;
   text-transform: uppercase;
   white-space: nowrap;
   line-height: 0.9;
@@ -930,40 +942,48 @@ main{
 .tittel {
   font-size: 2.96vh;
   text-align: right;
-  padding-right: 1vh;
+  /* padding-right: 1vh; */
   padding-top: 0.4vh;
   text-wrap: nowrap;
 }
 
 .logoimg {
-  height: 109%;
+  /* height: 109%; */
    /* transform: scaleX(-1); */
    padding-left: 2.5vh;
   }
 
 .logo {
-  height: 100%;
+  height: 14vh;
   border-radius: 10px;
-  background-color: #f5a700;
+  /* background-color: #f5a700; */
   padding-left: 1vh;
   /* object-position: -1vh 0; */
 }
 
+.medstrek hr{
+  height: 0.2em;
+  margin-top: 1%;
+ }
 
 .prosjekter-seksjon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5vh;
      /* height: 76vh; */
+     height: fit-content;
+     width: fit-content;
+     /* background-color: brown; */
   }
 
+.prosjekt{
+/* width: 100%; */
+width: 25vw;
+}
   
 /* .project-image {
-  width: 100%;
-  height: 75%;
-  object-fit: cover;
-  border-bottom: var(--kull) solid 0.2em;
-} */
+
+  } */
 
 /* .prosjektnavn {
   display: flex;
@@ -986,24 +1006,29 @@ padding-top: 0.5vh;
   font-size: 2vh;
 }
 
-.prosjektnr {
+/* .prosjektnr {
   align-self: flex-end;
   font-size: 6.4vh;
   padding-right: 0.7vh;
-} */
+} */ 
 
 .prosjektnavn {
   display: flex;
   text-wrap: nowrap;
   padding-left: 0.6vh;
+  font-size: 0.5em;
+  height: fit-content;
   color: black;
-  /* align-items: center; */
+  /* background-color: olive; */
+  align-items: center;
+  padding-top: 4%;
  }
 
+/* 
 .prosjekt-tittelognavn {
-/* align-self: center; */
+align-self: center;
 padding-top: 0.5vh;
-}
+} */
 
 .prosjekt-tittel {
   font-size: 3em;
@@ -1016,12 +1041,11 @@ padding-top: 0.5vh;
 .prosjektnr {
   /* display: flex; */
   /* align-content: flex-end; */
-  font-size: 5em;
+  font-size: 5.5em;
   padding-right: 0.7vh;
-  background-color: olive;
+  /* background-color: olive; */
   /* padding-top: 0.06em; */
-  
-}
+  }
 
 
 .profile {
@@ -1031,6 +1055,10 @@ padding-top: 0.5vh;
   width: 40vh;
   height: 100%;
   padding-left: 3vh;
+}
+.profile-picture{
+  width: 50%;
+  /* object-fit: contain; */
 }
 
 
@@ -1059,11 +1087,13 @@ padding-top: 0.5vh;
   width: 80%;
 } */
 
-  header {
-    /* width: 87%; */
-    width: 70%;
+  header, main {
+       width: 65%;
+       /* background-color: olive; */
+       /* width: fit-content; */
   }
-
+  
+  
   .forside {
     overflow: hidden; 
     padding-bottom: 0;
@@ -1077,11 +1107,41 @@ padding-top: 0.5vh;
     width: 40%;
   } */
 
+
+ .prosjekt{
+    /* width: 100%; */
+    width: 32vh;
+    /* aspect-ratio: 1/1; */
+    /* overflow: hidden; */
+    }
+
+.prosjektnavn{
+  padding-top: 1%;
+}
+
+    .prosjektnr{
+      font-size: 7em;
+    }
+
+    .prosjektnavn-over{
+      font-size: 2em;
+    }
+
+    .prosjekt-tittel{
+      font-size: 3.8em;
+      
+    }
+
+    /* .prosjekt-tittelognavn{
+      padding-left: 0;
+    } */
+
+
   .profile {
     width: 50vh;
   }
 
- 
+
 
 
 
@@ -1105,18 +1165,61 @@ padding-top: 0.5vh;
 }
 /* ------------------------------------------- */
 
-  header {
-    width: 75%;
+body{
+  margin-top: 0.4vh;
+}
+
+  header, main {
+    width: 60%;
+  }
+  
+
+   .navn{
+    font-size: 6vh;
+   }
+
+   .logo {
+    /* height: 12vh; */
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: transparent; */
+    padding-left: 1vh;
+    /* object-position: -1vh 0; */
+  }
+ 
+  .portfolioexhibition>div{
+    /* height: 1vh;  */
+    font-size: 3.5vh;
   }
 
-  main {
-    width: 75%;
+   .prosjektnavn{
+    padding-top: 1.6%;
+    font-size: 0.68em;
+  }
+  /*
+      .prosjektnr{
+        font-size: 7em;
+      }
+  
+      .prosjektnavn-over{
+        font-size: 2em;
+      }
+  
+      .prosjekt-tittel{
+        font-size: 3.8em;
+        
+      } */
+
+
+  .prosjektside-topstack{
+    font-size: 1.35em;
+    /* padding-right: 2%; */
+    /* background-color: olive; */
   }
 
-
-
-
-
+  .prosjektside-split-høyre{
+    max-width: 48%;
+  }
 
 
 
