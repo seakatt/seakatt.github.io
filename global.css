@@ -151,7 +151,8 @@ align-self: center;
 
 
 /* ---------------------------------------------------- */
-.prosjekt-tittel {
+
+/* .prosjekt-tittel {
   font-size: 4.5vw;
   }
 
@@ -162,9 +163,26 @@ align-self: center;
 .prosjektnr {
   font-size: 8vw;
   padding-right: 0.6vw;
-  }
+  } */
 
   /* -------------------------------------------- */
+
+  .prosjekt-tittel {
+    font-size: 1.15em;
+    line-height: 1;
+    }
+  
+  .prosjektnavn-over{
+    font-size: 0.6em;
+  }
+  
+  .prosjektnr {
+    font-size: 2em;
+    padding-right: 0.6vw;
+    }
+
+
+/* --------------------------------------------------- */
 
 .profile {
   display: flex;
@@ -988,11 +1006,11 @@ main{
   height: fit-content;
   color: black;
   align-items: center;
-   font-size: min(1vw, 72%);
+   /* font-size: min(1vw, 72%); */
    /* font-size: 0.72em; */
  }
 
-.prosjekt-tittel {
+/* .prosjekt-tittel {
   font-size: 2.9em;
   }
 
@@ -1002,7 +1020,7 @@ main{
 
 .prosjektnr {
   font-size: 5.5em;
-   }
+   } */
 
 .profile {
   display: flex;
@@ -1079,13 +1097,16 @@ main{
     padding-bottom: 0;
     }
 
+.prosjektnavn{
+  font-size: 1.35vw;
+  padding-top: 2.5%;
+}
+
     .prosjekt{
       max-width: min(32vh, 19vw);
       }
 
-    .prosjekt-tittel{
-      font-size: 50%;
-    }
+    
 
     .profile{
       max-width: 30vw;
@@ -1144,12 +1165,9 @@ main{
     padding-bottom: 0;
     }
 
-.prosjektnavn{
-        /* padding-top: 1%; */
-        /* font-size: min(0.8wv); */
-        /* font-size: 69%; */
-        font-size: 75%;
-      }
+/* .prosjektnavn{
+    
+      } */
 
 /* 
     .prosjektnr{
