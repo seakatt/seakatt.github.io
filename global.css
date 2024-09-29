@@ -1109,8 +1109,7 @@ main{
     
 
     .profile{
-      max-width: 30vw;
-      /* max-width: none; */
+      max-width: max(40vw);
     }
 
   .profile-text{
@@ -1189,8 +1188,10 @@ main{
 
 
   .profile {
-    /* max-width: min(450px, 36vh); */
-    max-width: 38vh;
+    max-width: max(24vw);
+
+    /* max-width: min(450px, 36vh);
+    max-width: 38vh; */
   }
 
   /* .prosjekt-nr{
