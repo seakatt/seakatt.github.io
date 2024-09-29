@@ -1189,7 +1189,8 @@ main{
 
 
   .profile {
-    max-width: min(450px, 36vh);
+    /* max-width: min(450px, 36vh); */
+    max-width: 38vh;
   }
 
   /* .prosjekt-nr{
