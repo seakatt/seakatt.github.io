@@ -1098,7 +1098,7 @@ main{
     }
 
 .prosjektnavn{
-  font-size: max(01.35vw, 2.7vh );
+  font-size: max(01.35vw, 2.7vh, 28px);
   padding-top: 2.5%;
 }
 
@@ -1109,12 +1109,12 @@ main{
     
 
     .profile{
-      max-width: max(35vw);
+      max-width: min(34vw);
     }
 
   .profile-text{
     overflow-y: hidden;
-    font-size: 90%;
+    font-size: 75%;
     /* min-width: 30vw; */
     margin-top: 0;
     margin-bottom: 0;
