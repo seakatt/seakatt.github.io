@@ -243,15 +243,7 @@ align-self: center;
   /* align-items: flex-end; */
 }
 
-.prosjektside-split-høyre {
-  /* width: 50vh; */
-  /* justify-items:right; */
-  max-width: 49%;
-  margin-top: auto;
-  /* height: 20vh; */
-  text-align: right;
-  /* background-color: #dfd5c3; */
-}
+
 
 h1 {
   padding: 0;
@@ -296,8 +288,7 @@ h1 {
 
 .prosjektside-split-høyre img{
   max-height: 70vh;
-  max-width: 100%
-  ;
+  max-width: 100%;
 }
 
 .prosjekttekst {
@@ -307,18 +298,9 @@ h1 {
 }
 
 .prosjekttekst2 {
-  /* width: 60vh; */
-  /* max-width: 60%; */
-  /* min-width: 30vw; */
-  /* width: 50vw; */
-  
-/* bottom: 0; */
-/* background-color: olive; */
-/* width: 100%; */
   margin-top: auto;
-  /* padding-right: 2vh; */
-  /* justify-self: flex-end; */
 }
+
 .flex2{
   flex: 2;
 }
@@ -443,17 +425,7 @@ h1 {
   /* padding-top: 6vh; */
 }
 
-.bolk {
-  display: flex;
-  justify-content: space-between;
-  gap: 2vh;
-  border: solid 1px brown;
-  /* max-width: 100%; */
-  width: 100%;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  /* height: 100%; */
-}
+
 
 .nopad {
   padding: 0;
@@ -508,77 +480,6 @@ height: 20vh;
 
 /* --------------------------------------------------------- */
 
-.prosjektgalleri3 {
-  display: flex;
-  gap: 1vh;
-  /* background-color: brown; */
-  width: 100%;
-  /* overflow: hidden;  */
-  align-items: flex-end;
-  /* height: 10vh; */
-}
-
-
-/* .prosjektgalleri3 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1vh;
-} */
-
-.prosjektgalleri3 div{
- /* width: 39.8%; */
- /* row-gap: 2vh; */
-/* width: 100%; */
-height: 100%;
- /* width: 20em; */
- /* height: 10vh; */
- /* background-color: olive; */
- /* flex: 2; */
-}
-
-#vinylimg {
-  /* flex: 1; */
-  width: 100%;
-}
-
-.prosjektgalleri3 figure {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-
-/* flex: 3; */
-
-}
-.prosjektgalleri3 img{
-/* width: 20%; */
-/* display: inline; */
-width: 100%;
-/* width: auto; */
-/* max-width: 26.6vh; */
-/* max-height: 100%; */
-/* height:auto ; */
-/* object-fit: contain; */
-}
-
-.prosjektgalleri3 video {
- width: 100%;
- /* height: 100%; */
- /* height: auto; */
- /* object-fit: cover; */
- /* display: block; */
-  /* background-color: darkblue; */
-  /* width: 20%; */
-   /* margin-top: auto; */
-   
-   /* flex: 1; */
-}
-
-#vinyl{
-  flex: 4;
-  /* height: 20vh; */
-  background-color: brown;
-  }
 
 
 
@@ -597,19 +498,6 @@ width: 100%;
     height: 27vh;
   }
 
-.bilder_3x2{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1vh;
-  /* width: 60%; */
-  min-width: 50%;
-  flex: 3;
-  /* background-color: olive; */
-}
-.bilder_3x2 img {
-  /* height: 30vh; */
-  width: 100%;
-}
 
 .bilder_2x2{
   display: grid;
@@ -643,19 +531,7 @@ width: 100%;
   padding-bottom: 5vh;
 } */
 
-.bolk-aatb{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* padding: 6vh; */
-  gap: 1vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-.bolk-aatb img{
-  /* width: 55vh; */
-  width: 40%;
-}
+
 
 
   figcaption {
@@ -702,18 +578,6 @@ row-gap: 2vh;
   transition: 0.1s;
 }
 
-
-.oppslagsgalleri :active {
-  transition: 0.1s;
-  transform: scale(2);
-  cursor: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  z-index: 2;
-}
-
 .zoomclick, .zoomclick2, .zoomclick3 {
   position: relative;
 }
@@ -721,46 +585,7 @@ row-gap: 2vh;
 .zoomclick:hover, .zoomclick2:hover, .zoomclick3:hover, .prosjekt-video:hover, .oppslagsgalleri :hover  {
   cursor: zoom-in;
 }
-.zoomclick img:active, .zoomclick video:active { 
-  transition: 0.1s;
-  transform: scale(0.9);
-  cursor: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  z-index: 2;
-  width: auto;
-}
 
-
-.zoomclick2 img:active, .zoomclick2 video:active { 
-  transition: 0.1s;
-  /* transform: scale(2); */
-  height: 80vh;
-  cursor: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* max-height: 90vh; */
-  z-index: 2;
-  width: auto;
-}
-
-.zoomclick3 :active { 
-  transition: 0.1s;
-  height: 80vh;
-  /* transform: scale(0.5); */
-  cursor: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.3);
-  /* max-height: 90vh; */
-  z-index: 2;
-  /* width: auto; */
-}
 
 .medstrek {
   display: flex;
@@ -887,15 +712,30 @@ main{
     .prosjektside-split-venstre {
       width: 100%;
     }
- 
+
+    .prosjektside-top > .prosjekt-nr {
+      padding-right: 2vh;
+      font-family: 'Anton';
+      font-size: 340%;
+    }
+    .prosjektside-topstack{
+      font-size: 70%;
+    }
+
+ figure{
+  width: 100%;
+  max-width: 724px;
+  height: auto;
+ }
+
     .prosjektside-split-høyre {
       display: block;
       margin: auto;
       width: 100%;
-      /* background-color: olive; */
     }
-    .prosjektside-split-høyre figure {
+    .prosjektside-split-høyre>img {
       width: 100%;
+      /* max-width: none; */
       height: auto;
       /* margin: auto; */
     }
@@ -917,7 +757,100 @@ main{
 
      }
 
+     .skille{
+      display: none;
+     }
 
+.bolk{ 
+  display: flex;
+  justify-content: space-between;
+  gap: 2vh;
+  flex-direction: column;
+  /* margin-top: 12vw;  */
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.bolk-r{ 
+  display: flex;
+  justify-content: space-between;
+  gap: 2vh;
+  flex-direction: column-reverse;
+  /* margin-top: 12vw;  */
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+
+.overskrift{
+margin-bottom: 8vw;
+}
+
+/* .prosjektgalleri3{
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .prosjektgalleri3>*{
+  margin-top: 4vw;
+} */
+
+.prosjektgalleri{
+  flex-direction: column;
+  }
+  .prosjektgalleri>*{
+    margin-top: 4vw;
+  }
+
+  .bilder_2x10{
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+ 
+  .bolk-aatb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 6vh; */
+    gap: 1vh;
+    /* background-color: olive; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .bolk-aatb img{
+    /* width: 55vh; */
+    width: 80%;
+  }
+
+  .bilder_3x2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vh;
+    min-width: 50%;
+  }
+  .bilder_3x2 img {
+    width: 100%;
+  }
+
+  #vinylimg {
+    display: flex;
+   justify-content: space-between;
+   /* background-color: olive; */
+   /* width: 100px; */
+  }
+  #vinylimg>figure{
+    width: 49%
+  }
+
+  .cursed{
+    width: 100%;
+  }
+  
+  .prosjektgalleri3 video {
+   width: 100%;
+  }
 
   /* ----------------------------------------------------------------------------------------------- */
 }
@@ -1047,12 +980,135 @@ main{
   /* background-color: rgb(44, 44, 6); */
 }
 
-#vinylimg{
-  /* height: 20vh; */
-  flex: 21
+.prosjektside-split-høyre {
+  max-width: 49%;
+  margin-top: auto;
+  text-align: right;
 }
-#vinylvid{
-  flex: 81.2
+
+.bolk{
+  /* display: flex; */
+  /* justify-: center; */
+  flex-direction: row;
+  /* background-color: olive; */
+}
+
+.bolk-aatb{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+justify-content: center;
+  /* background-color: brown; */
+}
+
+.bolk-aatb img{
+  /* width: 55vh; */
+  width: 40%;
+  /* margin: auto; */
+  /* justify-content: center; */
+}
+
+.bolk-r{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* flex: 3 */
+  margin-top: min(4vw, 4vh);
+  margin-bottom: min(4vw, 4vh) ;
+}
+/* .bolk-r>.bilder_3x2{
+  grid-template-columns: repeat(1, 2fr);
+} */
+
+.overskrift{
+margin-bottom: 0;
+}
+
+
+.galleribilde{
+  max-width: 45%;
+  /* padding-top: 6em; */
+}
+
+.flexcolumn{
+  max-width: 60%;
+}
+
+.bilder_3x2{
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+}
+.bilder_3x2 img{
+  width: 32%;
+}
+.bolk-r>.prosjekttekst2{
+  width: 10vw;
+  /* background-color: olive; */
+}
+
+#vinylimg{
+  display: flex;
+  gap:1vw;
+  width: 80%;
+  /* justify-self: center; */
+  margin: auto;
+}
+
+.cursed{
+  width: 100%;
+}
+
+
+.oppslagsgalleri :active {
+  transition: 0.1s;
+  transform: scale(2);
+  cursor: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 2;
+}
+
+.zoomclick img:active, .zoomclick video:active { 
+  transition: 0.1s;
+  transform: scale(0.9);
+  cursor: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 2;
+  width: auto;
+}
+
+.zoomclick2 img:active, .zoomclick2 video:active { 
+  transition: 0.1s;
+  /* transform: scale(2); */
+  height: 80vh;
+  cursor: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* max-height: 90vh; */
+  z-index: 2;
+  width: auto;
+}
+
+.zoomclick3 :active { 
+  transition: 0.1s;
+  height: 80vh;
+  /* transform: scale(0.5); */
+  cursor: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.3);
+  /* max-height: 90vh; */
+  z-index: 2;
+  /* width: auto; */
 }
 
 
@@ -1165,9 +1221,9 @@ main{
     padding-bottom: 0;
     }
 
-/* .prosjektnavn{
-    
-      } */
+.prosjektnavn{
+    font-size: min(01.35vw, 2.7vh, );
+      }
 
 /* 
     .prosjektnr{
@@ -1203,6 +1259,9 @@ main{
  
   } */
 
+  .prosjektside-top > .prosjekt-nr {
+       font-size: 5em;
+    }
 
 
 
@@ -1231,7 +1290,7 @@ body{
 }
 
   header, main {
-    max-width: min(60%, 1150px);
+    max-width: min(60%, 1200px);
   }
   
 
@@ -1254,9 +1313,14 @@ body{
   }
 
    .prosjektnavn{
-    padding-top: 2%;
-    font-size: min(0.77em, 12px);
+    padding-top: 2.8%;
+    font-size: min(2vw, 30px);
+    padding-right: 0.5em;
       }
+
+.prosjekt{
+  max-width: 32vw
+}
 
   /* .prosjektside-topstack{
     font-size: 1.35em;
