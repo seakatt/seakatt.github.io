@@ -1048,6 +1048,11 @@ justify-content: center;
 margin-bottom: 0;
 }
 
+.overskrift2{
+  /* margin-top: 12vw; */
+  font-size: 350%;
+}
+
 
 .galleribilde{
   max-width: 45%;
