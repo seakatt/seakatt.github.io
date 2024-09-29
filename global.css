@@ -287,15 +287,11 @@ h1 {
 }
 
 .prosjektside-split-høyre img{
-  max-height: 70vh;
+  /* max-height: 70vh; */
   max-width: 100%;
 }
 
-.prosjekttekst {
-  /* width: 60vh; */
-  max-width: 60vh;
-  min-width: 40%;
-}
+
 
 .prosjekttekst2 {
   margin-top: auto;
@@ -312,11 +308,7 @@ h1 {
   height: 40vh;
 } 
 
-.prosjekt-video2 {
-  /* width: 65vh; */
-  width: 50%;
-  margin-right: 2vh;
-}
+
 
 .youtube {
   /* width: fit-content; */
@@ -355,55 +347,12 @@ h1 {
 }
 
 
-.bildestripe {
- display: flex;
-  /* justify-content: center; */
-  justify-content: space-between;
-  /* gap: 2vh; */
-  /* height: 29vh; */
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  
-}
-
-.bildestripe img {
-  /* width: 25%; */
-    /* width: 28vh; */
-    width: 24%;
-    height: 100%;
-  }
-
-.tekststripe {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2vh;
-    row-gap: 3vh;
-}
-
 /* .tekststripe p {
     align-self: center;
   }  */
 
-  .bildestripe3 {
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-  }
-  .bildestripe3 img {
-    width: 33%;
-  }
 
-.overskrift {
-  display: flex;
-  font-size: 300%;
-  font-weight: 100;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  /* margin-top: 0;
-  padding-top: 0; */
- text-align: center;
- /* padding-top: 6vh; */
-  /* background-color: olive; */
-}
+
 
 .skille {
   margin-top: 5vh;
@@ -413,16 +362,20 @@ h1 {
   border: none;
 }
 
+
+.overskrift{
+  /* margin-bottom: 8vw; */
+  /* display: flex; */
+  font-size: 300%;
+  font-weight: 100;
+  /* display: flex; */
+  }
+
 .overskrift hr {
   width: 100%;
   align-self: center;
   margin: 0;
   padding: 0;
-}
-
-.overskrift2 {
-  font-size: 300%;
-  /* padding-top: 6vh; */
 }
 
 
@@ -633,8 +586,7 @@ width: auto;
 
 /* ----------------------------------------------------------------------------------- */
 
-@media screen and 
-(max-width: 724px)
+@media screen and (max-width: 724px)
 /* (max-width: 1024px) */
 {
   /* ------------------------------------- */
@@ -784,9 +736,7 @@ main{
 }
 
 
-.overskrift{
-margin-bottom: 8vw;
-}
+
 
 /* .prosjektgalleri3{
   display: flex;
@@ -852,13 +802,75 @@ margin-bottom: 8vw;
    width: 100%;
   }
 
+  .zoom_cta{
+    display: none;
+  }
+
+
+/* ---------------------------------- MISE EN SCENE --------------------------------------- */
+
+.bildestripe {
+  display: flex;
+   /* justify-content: center; */
+   justify-content: space-between;
+   /* gap: 2vh; */
+   /* height: 29vh; */
+   margin-top: 2vw;
+   margin-bottom: 4vw;
+   flex-wrap: wrap;
+   row-gap: 2vw;
+ }
+ 
+ .bildestripe img {
+   /* width: 25%; */
+     /* width: 28vh; */
+     /* width: 24%; */
+     width: 49%;
+     /* height: 100%; */
+   }
+
+   .oppslagsgalleri{
+    /* display: flex; */
+    display: block;
+    /* row-gap: 2vw; */
+    /* flex-wrap: wrap; */
+    margin-bottom: 12vw;
+   }
+   .oppslagsgalleri img{
+    width: 100%;
+    margin-top: 2vw;
+   }
+
+.tekststripe{
+  display: block;
+  /* margin-bottom: 12vw; */
+  
+}
+.tekststripe p{
+  margin-top: 2em;
+}
+
+.pc-only{
+  display: none;
+}
+  
+.overskrift2{
+  margin-top: 12vw;
+  font-size: 300%;
+}
+.overskrift{
+  margin-top: 12vw;
+}
+
+.bildestripe3 img{
+  width: 100%;
+}
+
   /* ----------------------------------------------------------------------------------------------- */
 }
 
 
-@media only screen and 
-/* (min-width: 1024px) */
-(min-width: 724px)
+@media only screen and (min-width: 724px)
 {
 
   /* ------------------------------------- */
@@ -996,6 +1008,13 @@ margin-bottom: 8vw;
 /* .bolk>.prosjekttekst2{
   width: 20%;
 } */
+.prosjekttekst {
+  /* width: 60vh; */
+  max-width: 60vh;
+  min-width: 40%;
+}
+
+
 
 .bolk-aatb{
   display: flex;
@@ -1115,6 +1134,33 @@ margin-bottom: 0;
   /* width: auto; */
 }
 
+.pc-only{
+  display: block;
+}
+
+.prosjekttekst {
+  /* width: 60vh; */
+  max-width: 60vh;
+  min-width: 40%;
+}
+
+
+.tekststripe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2vh;
+  row-gap: 3vh;
+}
+
+.bildestripe3 {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+.bildestripe3 img {
+  width: 33%;
+}
+
 
        /* ----------------------------------------------------------------------------------------------- */
 }
@@ -1141,9 +1187,10 @@ margin-bottom: 0;
 /* ------------------------------------------- */
 
 
-/* body {
-  width: 80%;
-} */
+.zoom_cta{
+  display: block;
+  text-align: center;
+}
 
   header, main {
        width: 85%;
@@ -1180,7 +1227,36 @@ margin-bottom: 0;
     margin-bottom: 0;
   }
 
+  .prosjektgalleri3{
+    display: flex; 
+    /* align-self: flex-end; */
+    /* margin-top: auto; */
+    /* background-color: olive; */
+    gap: min(2vw, 2vh);
 
+  }
+#vinylimg{
+  display: flex;
+  flex-direction: column;
+  width: min(20vw, 20vh);
+  /* align-self: flex-end; */
+  /* align-content: flex-end; */
+}
+
+.bildestripe{
+  display: flex;
+  /* gap: min(2vw, 2vh); */
+  justify-content: space-between;
+  margin-top: min(2vh, 2vw);
+  margin-bottom: min(2vh, 2vw);
+}
+.bildestripe img{
+  width: 24%;
+}
+.prosjekt-video2 {
+  width: 65%;
+  margin-right: 2vh;
+}
 
   /* ----------------------------------------------------------------------------------------------- */
 }
