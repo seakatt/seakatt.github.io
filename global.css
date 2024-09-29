@@ -722,11 +722,11 @@ main{
       font-size: 70%;
     }
 
- figure{
+ /* figure{
   width: 100%;
   max-width: 724px;
   height: auto;
- }
+ } */
 
     .prosjektside-split-høyre {
       display: block;
