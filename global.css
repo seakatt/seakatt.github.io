@@ -1098,7 +1098,7 @@ main{
     }
 
 .prosjektnavn{
-  font-size: 1.35vw;
+  font-size: max(01.35vw, 2.7vh );
   padding-top: 2.5%;
 }
 
