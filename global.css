@@ -1083,9 +1083,16 @@ main{
       max-width: min(32vh, 19vw);
       }
 
+      .prosjektnavn{
+        /* padding-top: 1%; */
+        /* font-size: min(0.8wv); */
+        /* font-size: 69%; */
+        font-size: 75%;
+      }
+
     .profile{
-      /* min-width: 30vw; */
-      max-width: none;
+      max-width: 30vw;
+      /* max-width: none; */
     }
 
   .profile-text{
@@ -1151,12 +1158,7 @@ main{
 
 
 
-.prosjektnavn{
-  /* padding-top: 1%; */
-  /* font-size: min(0.8wv); */
-  /* font-size: 69%; */
-  font-size: 75%;
-}
+
 
 /* 
     .prosjektnr{
