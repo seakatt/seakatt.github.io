@@ -262,10 +262,6 @@ h1 {
   font-size: 5em;
   padding-right: 2vh;
   font-family: 'Anton';
-  /* font-weight: 100; */
-  /* text-justify: center; */
-  /* padding-bottom: 1vh; */
-  /* background-color: brown; */
 }
 
 .prosjektside-split-venstre {
@@ -274,7 +270,6 @@ h1 {
   /* justify-content: space-between; */
   width: 47%;
   height: auto;
-  /* background-color: olive; */
 }
 
 .prosjekt-intro {
@@ -282,10 +277,6 @@ h1 {
 }
 
 .prosjektside-split-høyre img{
-  /* width: 55vh; */
-  /* width: 100%; */
-  /* object-fit:scale-down */
-  /* height: auto; */
   max-height: 70vh;
   max-width: 100%
   ;
@@ -1077,8 +1068,8 @@ main{
 } */
 
   header, main {
-       /* width: 85%; */
-       max-width: min(120vh, 65em) ;
+       width: 85%;
+       /* max-width: min(120vh, 65em) ; */
   }
   
   
