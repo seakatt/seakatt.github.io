@@ -987,11 +987,15 @@ margin-bottom: 8vw;
 }
 
 .bolk{
-  /* display: flex; */
+  display: flex;
   /* justify-: center; */
   flex-direction: row;
   /* background-color: olive; */
+  /* width: 100%; */
 }
+/* .bolk>.prosjekttekst2{
+  width: 20%;
+} */
 
 .bolk-aatb{
   display: flex;
