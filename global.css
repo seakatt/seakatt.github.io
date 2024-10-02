@@ -1183,6 +1183,9 @@ max-width: 16.5vh;
        /* max-width: min(120vh, 65em) ; */
   }
   
+  .prosjekter-seksjon{
+    max-height: 75vh;
+  }
   
   .forside {
     overflow: hidden; 
