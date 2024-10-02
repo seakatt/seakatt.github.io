@@ -137,9 +137,9 @@ main {
   display: flex;
   /* text-wrap: nowrap; */
   width: 100%;
-  padding-left: 0.8vw;
+  padding-left: min(0.8vw, 0.8vh);
   color: black;
-  padding-top: 0.7vw;
+  padding-top: min(0.7vw, 0.7vh);
   /* align-items: flex-end; */
   /* background-color: rgb(26, 10, 45); */
  }
@@ -178,7 +178,7 @@ align-self: center;
   
   .prosjektnr {
     font-size: 2em;
-    padding-right: 0.6vw;
+    padding-right: min(0.6vw, 0.6vh);
     }
 
 
@@ -195,7 +195,7 @@ align-self: center;
 .profil-header {
   background-color: var(--hvit);
   width: 100%;
-  margin-bottom: 1.5vw;
+  margin-bottom: min(1.5vw, 2vh);
 }
 
 
@@ -234,7 +234,7 @@ align-self: center;
 
 .prosjektside-split {
   display: flex;
-  gap: 2vw;
+  gap: min(2vw, 2vh);
   justify-content: space-between;
   margin-bottom: 2vh;
   height: fit-content;
@@ -270,7 +270,7 @@ h1 {
 .prosjektside-top > .prosjekt-nr {
   /* font-size: 12vh; */
   font-size: 5em;
-  padding-right: 2vh;
+  padding-right: min(1.7vh, 1.7vw);
   font-family: 'Anton';
 }
 
@@ -283,12 +283,13 @@ h1 {
 }
 
 .prosjekt-intro {
-  padding-top: 2vh;
+  padding-top: min(2vh, 2vw);
 }
 
 .prosjektside-split-høyre img{
   /* max-height: 70vh; */
-  max-width: 100%;
+  width: 100%;
+  max-height: 80vh;
 }
 
 
