@@ -295,6 +295,7 @@ h1 {
 
 .prosjekttekst2 {
   margin-top: auto;
+  /* background-color: olive; */
 }
 
 .flex2{
@@ -346,6 +347,13 @@ h1 {
   align-self: center;
   margin: 0;
   padding: 0;
+}
+
+.gultittel{
+  color: var(--gylden);
+  line-height: 1.5;
+  /* padding-bottom: 0.5em; */
+  /* background-color: bisque; */
 }
 
 .nopad {
@@ -554,6 +562,16 @@ width: auto;
 
 /* ----------------------------------------------------------------------------------- */
 
+/* ----------------ylva------------------- */
+
+.bilde-vertikalt{
+  max-height: 20vh;
+}
+
+/* ---------------------------- */
+
+
+
 @media screen and (max-width: 724px)
 /* (max-width: 1024px) */
 {
@@ -706,6 +724,7 @@ main{
 
 
 
+
 /* .prosjektgalleri3{
   display: flex;
   flex-direction: column;
@@ -833,6 +852,8 @@ main{
 .bildestripe3 img{
   width: 100%;
 }
+
+
 
   /* ----------------------------------------------------------------------------------------------- */
 }
@@ -1118,6 +1139,19 @@ max-width: 16.5vh;
   z-index: 2;
   /* width: auto; */
 }
+.zoomclick4 :active { 
+  transition: 0.1s;
+  height: 80vh;
+  transform: scale(2);
+  cursor: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(5);
+  /* max-height: 90vh; */
+  z-index: 2;
+  /* width: auto; */
+}
 
 .pc-only{
   display: block;
@@ -1136,6 +1170,7 @@ max-width: 16.5vh;
   column-gap: 2vh;
   row-gap: 3vh;
 }
+
 
 .bildestripe3 {
   display: flex;
@@ -1244,6 +1279,10 @@ max-width: 16.5vh;
 }
 .prosjekt-video2 {
   width: 65%;
+  margin-right: 2vh;
+}
+.prosjekt-video3 {
+  width: 20vw;
   margin-right: 2vh;
 }
 
