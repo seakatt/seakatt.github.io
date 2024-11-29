@@ -193,7 +193,8 @@ align-self: center;
   }
 
 .profil-header {
-  background-color: var(--hvit);
+  /* background-color: var(--hvit); */
+  
   width: 100%;
   margin-bottom: min(1.5vw, 2vh);
 }
@@ -621,13 +622,17 @@ main{
   /* flex-wrap: nowrap; */
 }
 .profile-picture{
-  width: 100%;
+  width: 50%;
   /* height: 50vw; */
 }
 .profil-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   /* height: auto; */
   /* height: 50%; */
-  width: 100%;
+  /* width: 45%; */
+  /* right: 0; */
 }
 
 .profile-text{
@@ -853,7 +858,9 @@ main{
   width: 100%;
 }
 
-
+.bildestripe4>figure>img {
+  width: 100%;
+}
 
   /* ----------------------------------------------------------------------------------------------- */
 }
@@ -901,6 +908,19 @@ main{
   text-align: right;
   padding-top: 0.4vh;
   text-wrap: nowrap;
+}
+
+.mobile-only{
+  display: none;
+}
+
+.profil-header{
+  justify-content: flex-end;
+  background-color: var(--hvit);
+}
+
+.profile-picture{
+  width: 100%;
 }
 
 .logoimg {
@@ -1185,6 +1205,8 @@ max-width: 16.5vh;
   display: flex;
   justify-content: space-between;
 }
+
+
 .bildestripe4>figure>img {
   width: 100%;
 }
