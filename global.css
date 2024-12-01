@@ -569,6 +569,13 @@ width: auto;
   max-height: 20vh;
 }
 
+.dummy-oppslag{
+  /* width: 1vh; */
+  /* background-color: #cccccc; */
+  /* height: 1vh; */
+  flex: 0.89;
+}
+
 /* ---------------------------- */
 
 
