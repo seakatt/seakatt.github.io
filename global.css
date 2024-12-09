@@ -523,6 +523,7 @@ row-gap: 2vh;
   /* flex-wrap: nowrap; */
   text-wrap: nowrap;
 }
+
 .medstrek hr {
   margin-right: 1vw;
   width: 100%;
@@ -532,6 +533,24 @@ row-gap: 2vh;
   height: 0.5vw;
   background-color: #f5a700;
 }
+
+.medstrek2 {
+  display: flex;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.medstrek2 hr {
+  width: 100%;
+  align-self: center;
+  border: none;
+  margin-top: 0.4em;
+  height: 2vw;
+  background-color: #f5a700;
+
+}
+
+
 
 .prosjektside footer {
   /* margin-top: 10vh; */
@@ -576,8 +595,45 @@ width: auto;
   flex: 0.89;
 }
 
-/* ---------------------------- */
+/* ------------- egenberedskap --------------- */
 
+.prosjektgalleri4 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.prosjektgalleri4 img {
+  width: 49.5%;
+  /* border: 1px solid var(--gylden); */
+}
+
+.fotobit{
+  padding-bottom: 12vh;
+}
+
+.tape{
+  align-self: center;
+  width: 100%;
+  height: 2em;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--gylden),
+    var(--gylden) 15px,
+    #141617 15px,
+    #141617 30px
+  );
+}
+
+.overskrift-scifi{
+  font-size: 3.6em;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: 500; */
+  border: solid 5px ;
+  border-color: rgba(var(--gylden) 0.1);
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
 
 
 @media screen and (max-width: 724px)
@@ -737,14 +793,7 @@ main{
 
 
 
-/* .prosjektgalleri3{
-  display: flex;
-  flex-direction: column;
-} */
 
-/* .prosjektgalleri3>*{
-  margin-top: 4vw;
-} */
 
 .prosjektgalleri{
   flex-direction: column;
