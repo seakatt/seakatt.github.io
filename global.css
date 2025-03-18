@@ -199,6 +199,10 @@ align-self: center;
   margin-bottom: min(1.5vw, 2vh);
 }
 
+.profile-picture{
+  width: 92%;
+}
+
 
 .profile p{
   /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
@@ -711,6 +715,10 @@ main{
   margin-bottom: 8%;
 }
 
+/* .profile-picture{
+  width: 92%;
+} */
+
 /* .prosjekter-seksjon{
   background-color: olive;
   width: 100%;
@@ -984,9 +992,7 @@ main{
   /* background-color: var(--hvit); */
 }
 
-.profile-picture{
-  width: 92%;
-}
+
 
 .logoimg {
    /* padding-left: 2.5vmax; */
