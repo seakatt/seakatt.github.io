@@ -1,14 +1,7 @@
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-@font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  /* font-weight: 400; */
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/anton/...) format('woff2');
-}
 
 :root{
   --kull: #101010;
@@ -420,6 +413,35 @@ height: 20vh;
   }
 
 /* ------------------------------------------------------------ */
+/* gpt zoom lightbox */
+
+.lightbox {
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-img, .overlay-vid{
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.overlay.active{
+  display: flex;
+}
+
+
 
 
 /* --------------------------------------------------------- */
@@ -526,7 +548,7 @@ row-gap: 2vh;
   position: relative;
 }
 
-.zoomclick:hover, .zoomclick2:hover, .zoomclick3:hover, .prosjekt-video:hover, .oppslagsgalleri :hover  {
+.zoomclick:hover, .zoomclick2:hover, .zoomclick3:hover, .prosjekt-video:hover {
   cursor: zoom-in;
 }
 
@@ -608,6 +630,52 @@ width: auto;
   /* height: 1vh; */
   flex: 0.89;
 }
+
+
+.flipbook-module {
+  /* width: 80%; */
+  /* background-color: var(--red); */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-btn {
+  flex: 0 0 50px;
+  background: var(--red);
+  color: var(--hvit);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.img-box {
+  /* flex: 1; */
+  display: flex;
+  overflow-x: auto;
+  /* width: 1640px; */
+  justify-content: center;
+  /* white-space: nowrap; */
+  /* margin: 0 10px; */
+  /* border: 1px solid #ccc; */
+}
+
+.pages-container {
+  display: flex;
+  /* transition: opacity 0.05s ease; */
+}
+
+.img-box img {
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  /* flex-shrink: 0; */
+  display: inline;
+  /* object-fit: contain; */
+}
+
+
 
 /* ------------- egenberedskap --------------- */
 
@@ -1181,7 +1249,7 @@ max-width: 16.5vh;
 }
 
 
-.oppslagsgalleri :active {
+/* .oppslagsgalleri :active {
   transition: 0.1s;
   transform: scale(2);
   cursor: none;
@@ -1190,7 +1258,7 @@ max-width: 16.5vh;
   left: 50%;
   transform: translate(-50%, -50%) scale(2);
   z-index: 2;
-}
+} */
 
 .zoomclick img:active, .zoomclick video:active { 
   transition: 0.1s;
@@ -1324,6 +1392,9 @@ max-width: 16.5vh;
        /* max-width: min(120vh, 65em) ; */
   }
   
+  .headerbox{
+    font-size: 80%;
+  }
   
   .forside {
     overflow: hidden; 
@@ -1433,6 +1504,9 @@ max-width: 16.5vh;
        /* background-color: olive; */
   }
   
+  .headerbox{
+    font-size: 100%;
+  }
   
   .forside {
     overflow: hidden; 
