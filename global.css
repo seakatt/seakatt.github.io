@@ -1153,6 +1153,10 @@ main{
 
 }
 
+.skille{
+  display: block;
+ }
+
 
 .bolk{
   display: flex;
