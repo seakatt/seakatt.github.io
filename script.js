@@ -63,10 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close lightbox
-    overlay.addEventListener('click', e => {
-        if (e.target === overlay) {
-            overlay.classList.remove('active');
-            navButtons.forEach(btn => btn.style.display = 'block');
-        }
-    });
+    overlay.addEventListener("click", () => {
+        overlay.classList.remove("active");
+      });
 });
