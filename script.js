@@ -1,76 +1,72 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".lightbox");
+    // Lightbox elements
     const overlay = document.getElementById("overlay");
     const overlayImg = document.getElementById("overlay-img");
     const overlayVideo = document.getElementById("overlay-vid");
+    const navButtons = document.querySelectorAll('#overlay-prev-btn, #overlay-next-btn');
 
-    images.forEach(item => {
-        item.addEventListener("click", () => {
-            if (item.tagName.toLocaleLowerCase() === "img") {
-                overlayImg.src = item.src;
-                overlayImg.style.display = "block";
-                overlayVideo.style.display = "none";
-            }
-            else if (item.tagName.toLocaleLowerCase() === "video") {
-                overlayVideo.src = item.src;
-                overlayVideo.style.display = "block";
-                overlayImg.style.display = "none"
-            }
-            overlay.classList.add("active")
+    // Flipbook elements
+    const flipbook = document.querySelector('.flipbook-module');
+    const imgBox = flipbook.querySelector('.img-box');
+    const pages = flipbook.querySelectorAll('.lightbox');
+    let currentIndex = 0;
+
+    // Regular images (non-flipbook)
+    document.querySelectorAll('.lightbox:not(.flipbook-module .lightbox)').forEach(img => {
+        img.addEventListener('click', () => {
+            navButtons.forEach(btn => btn.style.display = 'none');
+            overlayImg.src = img.src;
+            overlayImg.style.display = 'block';
+            overlayVideo.style.display = 'none';
+            overlay.classList.add('active');
         });
     });
 
-    overlay.addEventListener("click", () => {
-        overlay.classList.remove("active");
+    // Flipbook images
+    pages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index;
+            navButtons.forEach(btn => btn.style.display = 'block');
+            overlayImg.src = img.src;
+            overlayImg.style.display = 'block';
+            overlayVideo.style.display = 'none';
+            overlay.classList.add('active');
+            scrollToCurrentImage();
+        });
     });
-});
 
+    // Precise scroll handling
+    function scrollToCurrentImage() {
+        const img = pages[currentIndex];
+        const container = img.parentElement.parentElement;
+        const padding = parseInt(window.getComputedStyle(img.parentElement).paddingLeft);
+        imgBox.scrollLeft = img.offsetLeft - padding - container.offsetLeft;
+    }
 
+    // Navigation control
+    function navigate(direction) {
+        currentIndex = Math.max(0, Math.min(pages.length - 1, currentIndex + direction));
+        overlayImg.src = pages[currentIndex].src;
+        scrollToCurrentImage();
+    }
 
+    // Button controls
+    document.getElementById('prev-btn').addEventListener('click', () => navigate(-1));
+    document.getElementById('next-btn').addEventListener('click', () => navigate(1));
+    document.getElementById('overlay-prev-btn').addEventListener('click', e => {
+        e.stopPropagation();
+        navigate(-1);
+    });
+    document.getElementById('overlay-next-btn').addEventListener('click', e => {
+        e.stopPropagation();
+        navigate(1);
+    });
 
-
-// ---------------------------------------------------------------------------------------------------
-
-
-let currentIndex = 0;
-const imgBox = document.querySelector('.img-box');
-const pagesContainer = document.querySelector('.pages-container');
-const pages = document.querySelectorAll('.img-box img');
-const totalPages = pages.length;
-const pageWidth = 1640;
-
-
-
-
-
-
-
-// Get the actual displayed width of the images in the container (accounting for scaling)
-const getScaledWidth = () => {
-  const firstImage = imgBox.querySelector('img'); // Assuming all images have the same size
-  return firstImage ? firstImage.clientWidth : pageWidth;
-};
-
-function goToPage(index) {
-  if (index < 0 || index >= totalPages) return;
-  currentIndex = index;
-
-  // Calculate the scroll position using the actual displayed image width
-  const scaledWidth = getScaledWidth();
-  const scrollPosition = currentIndex * scaledWidth;
-
-  // Jump to the correct page
-  imgBox.scrollLeft = scrollPosition;
-}
-
-
-
-
-
-document.getElementById('prev-btn').addEventListener('click', () => {
-  goToPage(currentIndex - 1);
-});
-
-document.getElementById('next-btn').addEventListener('click', () => {
-  goToPage(currentIndex + 1);
+    // Close lightbox
+    overlay.addEventListener('click', e => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+            navButtons.forEach(btn => btn.style.display = 'block');
+        }
+    });
 });
