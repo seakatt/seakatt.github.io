@@ -838,9 +838,9 @@ main{
 
      }
 
-     .skille{
+     /* .skille{
       display: none;
-     }
+     } */
 
 .bolk{ 
   display: flex;
@@ -1153,9 +1153,6 @@ main{
 
 }
 
-.skille{
-  display: block;
- }
 
 
 .bolk{
