@@ -1001,6 +1001,9 @@ main{
 
 .bildestripe4>figure>img {
   width: 100%;
+  /* height: auto; */
+  display: block;
+  object-fit: contain;
 }
 
   /* ----------------------------------------------------------------------------------------------- */
@@ -1291,19 +1294,24 @@ max-width: 16.5vh;
   width: 33%;
 }
 
-.bildestripe4{
+/* .bildestripe4{
   display: flex;
   justify-content: space-between;
-}
+
+} */
 
 
 .bildestripe4>figure>img {
   width: 100%;
+  height: auto;
 }
 
-/* .bildestripe4>figure {
-  width: 25%;
-} */
+.bildestripe4>figure {
+  /* width: 25%; */
+  /* display: block; */
+  min-width: 0;
+
+}
 
 
        /* ----------------------------------------------------------------------------------------------- */
