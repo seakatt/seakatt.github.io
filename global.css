@@ -1270,11 +1270,10 @@ max-width: 16.5vh;
   display: block;
 }
 
-.prosjekttekst {
-  /* width: 60vh; */
+/* .prosjekttekst {
   max-width: 60vh;
   min-width: 40%;
-}
+} */
 
 
 .tekststripe {
