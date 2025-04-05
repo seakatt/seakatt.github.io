@@ -375,6 +375,10 @@ h1 {
 .bildetekst{
 width: 60vh;
 }
+.bildetekst2{
+  width: 60vh;
+  margin-left: 4vh;
+}
 
 /* .bildetekst img {
   width: 60vh;
@@ -432,11 +436,13 @@ height: 20vh;
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .overlay-img, .overlay-vid{
   max-width: 90%;
   max-height: 90%;
+  overlay: 1000;
 }
 
 .overlay.active{
@@ -664,6 +670,51 @@ width: auto;
   display: inline;
   /* object-fit: contain; */
 }
+
+/* ------------------------------------ GYOTAKU ------------------------------------------------------ */
+
+
+.bunnbilder {
+display: flex;
+gap: 1vh;
+justify-items: space-around;
+padding-left: 1vh;
+padding-right: 4vh;
+position: relative;
+margin-bottom: 1em;
+}
+
+.bunnbilder::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1vh;
+  transform: translateY(-50%);
+  background-color: var(--gylden);
+  z-index: 1;
+
+}
+
+
+.bunnbilder img {
+  width: 25%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+
+}
+
+.bolk-galleri {
+  width: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: rgb(70, 70, 34); */
+}
+
+
 
 
 
