@@ -376,8 +376,9 @@ h1 {
 width: 60vh;
 }
 .bildetekst2{
-  width: 60vh;
-  margin-left: 4vh;
+  width: 30vh;
+  margin-top: auto;
+  /* margin-left: 4vh; */
 }
 
 /* .bildetekst img {
@@ -714,7 +715,19 @@ margin-bottom: 1em;
   /* background-color: rgb(70, 70, 34); */
 }
 
+.bilde75{
+  width: 75%;
+}
 
+.bolk3{
+  display: flex;
+  width: 100%;
+  gap: 4vh;
+}
+
+.half{
+  max-width: 50%;
+}
 
 
 
@@ -1214,7 +1227,7 @@ main{
   /* justify-: center; */
   flex-direction: row;
   /* background-color: olive; */
-  /* width: 100%; */
+  width: 100%;
 }
 /* .bolk>.prosjekttekst2{
   width: 20%;
